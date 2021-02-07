@@ -1,0 +1,270 @@
+div#container 
+{
+	width: 800px;
+	height: 600px;
+	background: url("images/frame_copper_ver02.png") no-repeat;
+}
+
+div#simtitle
+{
+	position:absolute;
+	left:100px;
+	top:25px;
+	height: 40px;
+	width: 650px;
+	text-align: center;
+	font-size: 36px;
+	font-family: Times;
+}
+
+div#vartitle
+{
+	position:absolute;
+	left:629px;
+	top:100px;
+	height: 25px;
+	width: 150px;
+	text-align: center;
+	font-size: 16px;
+	font-family: serif;
+}
+
+div#ctrltitle
+{
+	position:absolute;
+	left:629px;
+	top:480px;
+	height: 22px;
+	width: 150px;
+	text-align: center;
+	font-size: 16px;
+	font-family:serif;
+}
+
+div#copyright
+{
+	position:absolute;
+	top:585px;
+	height: 10px;
+	width: 800px;
+	text-align: center;
+	font-size: 12px;
+	font-family:sans-serif;
+}
+#rotationbutton
+{
+	position: relative;
+	left: 110px;
+	top: 80px;
+}
+canvas#simscreen
+{
+	position:absolute;
+	left:30px;
+	top:100px;
+	height: 400px;
+	width: 550px;
+	z-index: 1;
+}
+#simscreen1
+{
+	position:absolute;
+	left:58px;
+	top:100px;
+	height: 400px;
+	width: 550px;
+	z-index: 1;
+}
+div#ctrltitle
+{
+	position:absolute;
+	left:629px;
+	top:480px;
+	height: 22px;
+	width: 150px;
+	text-align: center;
+	font-size: 16px;
+	font-family:serif;
+}
+div#commentboxcorrect
+{
+	border-top-width: 2px;
+	border-top-color: #f6ebed;
+	position:absolute;
+	left:30px;
+	top:480px;
+	height: 65px;
+	width: 285px;
+	color: green;
+	text-align: left;
+	font-size: 15px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+div#commentboxleft
+{
+	border-top-style: dotted;
+	border-top-width: 2px;
+	border-top-color: #f6ebed;
+	position:absolute;
+	left:28px;
+	top:505px;
+	height: 65px;
+	width: 190px;
+	color: #e7722b;
+	text-align: left;
+	font-size: 15px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+div#commentboxright
+{	
+	border-top-style: dotted;
+	border-top-width: 2px;
+	border-top-color: #f6ebed;	
+	border-left-style: dotted;
+	border-left-width: 2px;
+	border-left-color: #f6ebed;
+	position:absolute;
+	left:313px;
+	top: 505px;
+	height: 65px;
+	width: 190px;
+	color: #e7722b;
+	text-align: right;
+	font-size: 16px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+div#controls
+{
+	position:absolute;
+	left:607px;
+	top:435px;
+	height: 140px;
+	width: 175px;
+}
+
+#playpausebutton
+{
+	position: inherit;
+	left: 45px;
+	top: 80px;
+
+}
+input[type=text]{
+    /* Set width to 40characters */
+    width: 4ch;
+    /* prevent overflow of container */
+    max-width: 10%; 
+  }
+#titleincanvas
+{
+	position: absolute;
+	left: 80px; top:100px;
+	text-align: center;
+width: 500px;
+	font-family:"Comic Sans MS";
+}
+
+div#variables
+{
+	position:absolute;
+	left:627px;
+	top:150px;
+	height: 285px;
+	width: 150px;
+}
+
+#playpausebutton
+{
+	position: inherit;
+	left: 30px;
+	top: 80px;
+
+}
+#playpausebutton1
+{
+	position: absolute;
+	left: 150px;
+	top: 130px;
+}
+
+#one
+{
+	position: absolute;
+	left: 75px;
+	top: 80px;
+
+}
+#one1
+{
+	position: absolute;
+	left: 150px;
+	top: 230px;
+
+}
+#one2
+{
+	position: absolute;
+	left: 190px;
+	top: 283px;
+
+}
+#two
+{
+	position: absolute;
+	left: 120px;
+	top: 80px;
+}
+#two1
+{
+	position: absolute;
+	left: 150px;
+	top: 180px;
+}
+.slider:hover {
+    opacity: 1;
+  }
+  ul.space_list li { 
+	  margin-bottom: 1em; 
+font-family: 'Times New Roman', Times, serif;}
+
+.variable
+{
+	position: relative;
+	left: 5px;
+	border: none;
+    width: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+	border-radius: 5px;
+	outline: none;
+    background-color:#d7d7d7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5) inset; -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5) inset; box-shadow: 0 1px 2px rgba(0,0,0,0.5) inset;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+    }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: url(images/slider_handles.png) 0px -23px no-repeat; z-index: 2; ; cursor: default; outline: none; -webkit-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; 
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 15px;
+    height: 15px;
+	background: url(images/slider_handles.png) -4px -27px no-repeat; z-index: 2; ; cursor: default; outline: none; -webkit-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; 	cursor: pointer;
+    border-radius: 50%;  }

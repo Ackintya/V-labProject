@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="exp-3.css" />
+<title>SOLVE - Engineering Graphics Lab - Projection of Lines</title>
+<script src="exp-3.js"></script>   
+</head>
+
+<body>
+
+<!-- DND-Verifying JavaScript is enabled in browser -->
+<noscript>
+The simulation requires JavaScript to be enabled.
+</noscript>
+
+<!-- Defining Container for Sizmulation -->
+<div id="container">
+   
+<!-- Replace TITLE with simulation title to be displayed next to logo-->
+<div id="simtitle">Projection of Lines</div>
+
+<!-- Region for simulation display -->
+<canvas id="simscreen" width="550px" height="400px"></canvas>
+<div id="simscreen1">
+    <h4 id="objective" style="font-family:verdana; ">Objective:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:15px;">To Learn Projection of different lines</p></br>
+    <h4 id="apparatus" style="font-family:verdana; ">Apparatus used:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:14px;">Drawing Compasses, Pencil ,Ruler ,Drafter</p>
+   
+</div>
+
+<!-- Region for comment / question prompts -->
+<div id="commentboxleft">The length of line is already given</div>
+<div id="commentboxright"></div>
+
+
+<!-- DND-Title of region for variables display --> 
+<div id="vartitle">VARIABLES</div>
+
+<!-- Region for Input parameters of simulation -->
+
+<div id="variables">
+    <form id="areaform">
+        <label for="widthInput"><b>Above VP(m):&nbsp;&nbsp;&nbsp;</b></label>
+        <input type="number" size="0.5" class="variable" id="widthInput"  value="30" onchange="updatesliderwidth(this.value);">
+        <input type="range" class="slider" id="wid" name="rangeInput" min="0" max="50" onchange="updatewidth(this.value);">
+        </br></br></br>
+        <label for="heightInput"><b>Front of HP(k):</b></label>
+        <input type="number" class="variable" size="10" id="heightInput" value="30" onchange="updatesliderheight(this.value);">
+        <input type="range" class="slider" id="hgt" name="rangeInput" min="0" max="50" onchange="updateheight(this.value);"></br></br></br>
+        <label for="angle"><b>Angle(θ):&emsp;&emsp;&nbsp;&nbsp;&nbsp;</b></label>
+        <input type="number" class="variable" size="10" id="angle" value="30" onchange="updatesliderangle(this.value);">
+        <input type="range" class="slider" id="ang" name="rangeInput" min="0" max="90" onchange="updateangle(this.value);">        </br></br> </br>
+        <label for="angle"><b>Angle(α):&emsp;&emsp;&nbsp;&nbsp;&nbsp;</b></label>
+        <input type="number" class="variable" size="10" id="angle1" value="30" onchange="updatesliderangle1(this.value);">
+        <input type="range" class="slider" id="ang1" name="rangeInput" min="0" max="90" onchange="updateangle1(this.value);">
+    </form>
+</div>
+
+<div id="ctrltitle">CONTROLS</div>
+<!-- Region for User controls of simulation -->
+<div id="controls">
+<img id="playpausebutton" onclick="nextfun1()" src="images/blueplaydull.png" />
+<img class="rotatioemutton" id="two" onclick="nextfun()" src="images//bluefwddulls.png" />
+<img class="rotatioemutton" id="one" onclick="nextfun2()" src="images//bluebkdulls.png" />
+
+<!-- DND-Copyright display-->
+<div id="copyright" title="Developer : SOLVE"> Copyright &copy; SOLVE The Virtual Lab @ NITK Surathkal </div>
+
+</div><!-- Container div close -->
+
+</body>
+</html>
