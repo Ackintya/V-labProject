@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projection of lines</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="boom();"></body>
+<!--Simulation Screen start		-->
+<div id="simscreen">
+
+    <!--Title of Simulation		-->
+    <div id="title"><h3>Projection of lines-2</h3></div>
+    
+    <!--SubScreen Home	-->
+    <div class="simsubscreen" id="canvas0">
+    <h4 id="objective" style="font-family:verdana; ">Objective:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:15px;">To project line inclined to both VP and HP</p></br>
+    <h4 id="apparatus" style="font-family:verdana; ">Apparatus used:</h4>
+    <p class="incanvas" style="font-family:verdana; font-size:14px;">Drawing Compass, Drafter,Pencil,Ruler etc.</p>
+    <img id="compass"class="as" style="width: 100px;height: 140px; top: 220px;position: absolute;"  src="./images/compass.jpeg">
+    <img id="drafter" class="as" style="width: 280px;height: 160px; top: 270px;position: absolute;left: 200px;"  src="./images/Drafter.jpeg">
+    <img id="ruler" class="as"  style="width: 120px;height: 90px;position: absolute;top:260px;left: 530px;background-color: white;" src="./images/ruler2.png">
+     
+    <!-- <img id="" style="position:absolute; left:250px;top:250px;" title="sand" src="./images/box.png" /> -->
+    </div>
+    
+    <!--Step1	-->
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+    <p id="pumptext" class="steptext incanvas" style="font-family:verdana; font-size:14px;">
+        <strong id="titlestep" class="incanvas">STEP </strong>
+        <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span> 
+        <p id="text" class="steptext incanvas" style="font-family:verdana; position: relative; left: 94px; top: 55px; font-size:14px;">Draw the origin of lines</p></p>
+        <canvas id="can" class="canvases" width="700" height="500"></canvas>
+        <button type="button" onclick="a();" class="label" id="a">a'</button>
+        <button type="button" onclick="bb();" class="label" id="b">b</button>
+        <button type="button" onclick="b();" class="label" id="aa">a</button>
+        <button type="button" onclick="bbb()" class="label" id="bb">b'</button>
+        <button type="button" onclick="b11();" class="label" id="b11">b1'</button>
+        <button type="button" onclick="b2();" class="label" id="b2">b2</button>
+        <button type="button" onclick="b1();" class="label" id="b1">b1</button>
+        <button type="button" onclick="b22();" class="label" id="b22">b2'</button>
+        <button type="button" onclick="ha();" class="label" id="h">h</button>
+        <button type="button" onclick="v();" class="label" id="v">v</button>
+        <button type="button" onclick="hhhh();" class="label" id="hhhh">Traces</button>
+    </div>
+    
+    
+    <!--next  Arrow	-->
+    <div id="nav">
+        <img id="nextButton" onclick="navNext(); " src="Images/Next.png" />
+        <img id="reset" onclick="navNext();" style="visibility: hidden;" src="images/bluecwdull.png" />
+    </div>
+
+    
+    <div id="copyright"> &copy; 2020 SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+    <script src="./js/sample.js"></script>
+    </body>
+    </html>
+    
